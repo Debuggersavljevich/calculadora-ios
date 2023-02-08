@@ -23,11 +23,23 @@ export const styles = StyleSheet.create({
    boton: {
     height: 80,
     width: 80,
-    backgroundColor: '#333333',
+    backgroundColor: '#2D2D2D',
     borderRadius: 100,
     justifyContent: 'center',
+    marginHorizontal: 10
    },
-   botonTexto:{
-    alignItems: 'center',
+   botonText:{
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 30,
+    color: 'white',
+    fontWeight: 'bold'   
+},
+   fila: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    textAlign: 'center',
+    marginBottom: 18,
+    paddingHorizontal: 10
    }
 });
