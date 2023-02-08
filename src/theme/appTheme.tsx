@@ -29,8 +29,8 @@ export const styles = StyleSheet.create({
     marginHorizontal: 10
    },
    botonText:{
-    textAlign: 'center',
-    padding: 10,
+   textAlign: 'center', 
+   padding: 10,
     fontSize: 30,
     color: 'white',
     fontWeight: 'bold'   
