@@ -6,14 +6,16 @@ import {styles} from '../theme/appTheme'
 interface Props {
   texto:string,
   color?:string,
-  ancho?: boolean 
+  ancho?: boolean,
+  action: (numeroTexto: string) => void 
+
 }
 
-export const BotonCalc = ({texto, color = '#2D2D2D', ancho=false}:Props) => {
+export const BotonCalc = ({texto, color = '#2D2D2D', ancho=false, action}:Props) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => action (texto)}>
           <View style={{...styles.boton, backgroundColor: color, width: (ancho) ? 180 : 80}}>
-              <Text style={{...styles.botonText, color: (color === '#9B9B9B' ? 'black' : 'white')}}> {texto} </Text>
+               <Text style={{...styles.botonText, color: (color === '#9B9B9B' ? 'black' : 'white')}}> {texto} </Text>
           </View>
     </TouchableOpacity>
 
